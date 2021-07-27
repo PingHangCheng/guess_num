@@ -6,13 +6,17 @@
 '''
 import random
 r = random.randint(1,100)
+count = 0
 while True:
     num = int(input('請輸入一個數字來猜: '))
+    count += 1 # count = count + 1
     if num > r:
         print('你輸入的數字比較大')
     elif num == r:
-        print('終於猜對了！')
+        print('終於猜對了！' )
+        print('這是你猜的第', count, '次')
         break
     elif num < r:
         print('你輸入的數字比較小')
+    print('這是你猜的第', count, '次')
         
